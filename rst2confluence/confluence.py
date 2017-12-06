@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import urllib
+import urllib.parse
 
 from docutils import frontend, nodes, writers
 
@@ -31,7 +32,7 @@ class Writer(writers.Writer):
         self.visitor.meta = {}
         self.document.walkabout(self.visitor)
         # Save some metadata as a comment, one per line.
-        self.output = unicode()
+        self.output = ""
         self.output += self.visitor.astext()
 
 
@@ -229,7 +230,7 @@ http://confluence.atlassian.com/display/DOC/Confluence+Notation+Guide+Overview
             else:
                 self._add("[")
                 self._add(node.children[0].astext() + "|")
-                self._add(urllib.unquote(node["refuri"]) + "]")
+                self._add(urllib.parse.unquote(node["refuri"]) + "]")
         else:
             assert 'refid' in node, \
                    'References must have "refuri" or "refid" attribute.'
@@ -527,7 +528,7 @@ http://confluence.atlassian.com/display/DOC/Confluence+Notation+Guide+Overview
         if 'align' in node:
             atts['align'] = node['align']
         attributes = []
-        for att in atts.iterkeys():
+        for att in atts:
             if atts[att] is True:
                 attributes.append(att)
             else:

@@ -1,6 +1,10 @@
 *********************************************
 Convert reStructuredText to Confluence markup
 *********************************************
+
+This is cloned from https://github.com/netresearch/rst2confluence.
+See Changelog.
+
 .. image:: https://travis-ci.org/netresearch/rst2confluence.svg?branch=master
     :target: https://travis-ci.org/netresearch/rst2confluence
 
@@ -69,7 +73,7 @@ Usage
 =====
 ::
 
-    ./rst2confluence.py /path/to/file.rst
+    ./rst2jira.py /path/to/file.rst
 
 
 ============
@@ -81,9 +85,9 @@ From git checkout::
 
 Without a git checkout from the `Python Package Index`__::
 
-    $ pip install rst2confluence
+    $ pip install rst2jira
 
-__ https://pypi.python.org/pypi/rst2confluence
+__ https://pypi.python.org/pypi/rst2jira
 
 
 ============
@@ -95,7 +99,7 @@ Dependencies
 =====
 Tests
 =====
-We have some examples how ``rst2confluence`` should behave.
+We have some examples how ``rst2jira`` should behave.
 
 Check if it does what it should::
 
