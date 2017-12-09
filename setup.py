@@ -17,6 +17,8 @@ setup(
     url='https://github.com/rpuntaie/rst2jira',
 
     license='AGPL',
+    python_requires='>=3',
+
 
     py_modules=['rst2confluence.confluence'],
     scripts=['scripts/rst2jira.py']
