@@ -5,3 +5,5 @@ README.html
 build
 *.egg*
 rst2jira.1
+.tox
+.vscode
