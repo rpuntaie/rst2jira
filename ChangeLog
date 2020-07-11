@@ -1,3 +1,8 @@
+2020-07-11  Roland Puntaier <roland.puntaier@gmail.com>
+
+	* Version 0.7.1
+	* README.rst as pypi description
+
 2017-12-06  Roland Puntaier <roland.puntaier@gmail.com>
 
 	* rename script file to rst2jira.py

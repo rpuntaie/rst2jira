@@ -93,7 +93,7 @@ __ https://pypi.python.org/pypi/rst2jira
 ============
 Dependencies
 ============
-- ``python-docutils``
+
 - ``colordiff`` (for running the tests)
 
 =====
@@ -109,23 +109,3 @@ Run a single test::
 
     ./run-test.sh test/figure.rst
 
-
-===========
-Other tools
-===========
-Use deploy-rst__ to automatically deploy rST documents into confluence.
-
-
-__ https://github.com/netresearch/deploy-rst
-
-
-=======================
-Releasing a new version
-=======================
-
-1. Fill ``ChangeLog``
-2. Update version in ``setup.py``
-3. Create release tag
-4. Upload to pip::
-
-     $ ./setup.py sdist upload

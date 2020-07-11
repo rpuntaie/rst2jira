@@ -4,3 +4,4 @@ dist
 README.html
 build
 *.egg*
+rst2jira.1
