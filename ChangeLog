@@ -1,5 +1,10 @@
 2020-07-11  Roland Puntaier <roland.puntaier@gmail.com>
 
+	* Add a tox.ini file with flake8 configuration
+	* Version 0.7.2
+
+2020-07-11  Roland Puntaier <roland.puntaier@gmail.com>
+
 	* README.rst as pypi description
 	* Version 0.7.1
 
